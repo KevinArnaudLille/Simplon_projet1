@@ -10,8 +10,10 @@ nav ul {
   display: flex;
   font-size: 40px;
   justify-content: space-around;
-  margin: 10px;
-  padding: 0;
+  margin: 5px;
+}
+nav ul li{
+  padding: 5px;
 }
 nav ul li:hover{
   border-radius: 15px;
@@ -97,14 +99,19 @@ h1{
   font-size: 30px;
 }
 
-#contactFormular button{
-  font-family: 'Supermercado One', cursive;
-  font-size: 32px;
-}
-
 #contactFormular textarea{
   width: 50%;
   height: 200px;
+}
+
+#contactFormular button{
+  font-family: 'Supermercado One', cursive;
+  font-size: 32px;
+  background-color: rgb(255, 249, 244);
+}
+
+#contactFormular button:hover{
+  background-color: bisque
 }
 
 /* FOOTER */
