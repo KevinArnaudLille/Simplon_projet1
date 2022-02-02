@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Supermercado One', cursive;
+}
+
+/* HEADER */
+nav ul {
+  width: 100vw;
+  list-style-type: none;
+  display: flex;
+  font-size: 40px;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 0;
+}
+
+nav a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* BEST GAME SECTION */
+#bestGamesSection article{
+  background-color: beige;
+  overflow: auto;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+#bestGamesSection article h1{
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom:5px;
+} 
+#bestGamesSection article img {
+  height: 300px;
+  float: left;
+  margin: 0px 10px;
+}
+.seeReview {
+font-size: 19px;
+}
+
+/* UPCOMING GAME SECTION */
+.upGamesTile{
+  position: relative;
+}
+.upGamesTile img{
+height: 300px;
+}
+.upGamesHoverText{
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+/* CONTACT SECTION */
+
+/* FOOTER */
+footer{
+  text-align: center;
+}
