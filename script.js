@@ -3,6 +3,7 @@ function $(selector) {
   return document.querySelector(selector);
 }
 
+
 // -- Generate articles html content from fakedata.js
 const generateReview = review => {
   return `
@@ -32,26 +33,51 @@ $("#bestGamesSection").innerHTML = articlesSectionInnerHTML;
 
 
 // -- Update color CSS color variables while switching theme (light/dark)
-// - update function
-let root = document.documentElement;
+// - update functions
+let rootStyle = document.documentElement.style;
 let ligthBubble = $("#lightBubble img");
+let burgerIcon = $("#burgerIcon img");
 let isOnDarkMode = false;
+
 const switchMode = () => {
   if (isOnDarkMode) {
-    root.style.setProperty("--text-color", "black");
-    root.style.setProperty("--main-background-color", "white");
-    root.style.setProperty("--article-background-color", "#BAD4DE");
-    root.style.setProperty("--navbar-hover-color", "#BAD4DE");
+    COLOR_MODES.forEach(DOMElem => {
+      document.documentElement.style.setProperty(DOMElem.variableName, DOMElem.lightColor);
+    })
     ligthBubble.src = "./icons/lightbubble-black.svg";
+    burgerIcon.src = "./icons/burger-black.svg";
   } else {
-    root.style.setProperty("--text-color", "white");
-    root.style.setProperty("--main-background-color", "black");
-    root.style.setProperty("--article-background-color", "#000E13");
-    root.style.setProperty("--navbar-hover-color", "#082E3F");
+    COLOR_MODES.forEach(DOMElem => {
+      document.documentElement.style.setProperty(DOMElem.variableName, DOMElem.darkColor);
+    })
     ligthBubble.src = "./icons/lightbubble-white.svg";
+    burgerIcon.src = "./icons/burger-white.svg";
   }
   isOnDarkMode = !isOnDarkMode;
 };
-// - update event
+
+// - DOM elements events
 let darkBtn = $("#lightBubble");
 darkBtn.addEventListener("click", switchMode);
+
+
+// -- Burger menu while on mobile
+// - Opening/closing burger menu fonction
+let isBurgerMenuOpen = false;
+const openBurgerMenu = () => {
+  menuOpen.style.display = "flex";
+  isBurgerMenuOpen = !isBurgerMenuOpen;
+}
+const closeBurgerMenu = () => {
+  if (isBurgerMenuOpen) {
+    console.log("is ok");
+    menuOpen.style.display = "none";
+    isBurgerMenuOpen = !isBurgerMenuOpen;
+  }
+}
+
+// - DOM elements events
+let burgerBtn = $("#burgerIcon");
+let menuOpen = $("nav ul");
+burgerBtn.addEventListener("click", () => openBurgerMenu(menuOpen));
+menuOpen.addEventListener("click", closeBurgerMenu);

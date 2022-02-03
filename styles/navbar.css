@@ -1,4 +1,12 @@
 /* === HEADER === */
+/* Desktop */
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+  padding: 0;
+  align-items: center;
+}
 nav ul {
   list-style-type: none;
   display: flex;
@@ -6,14 +14,14 @@ nav ul {
   justify-content: space-around;
   margin: 5px;
   padding: 0;
+  align-items: center;
 }
 nav ul li {
-  padding: 5px;
+  padding: 5px 30px;
 }
 nav ul li:hover {
   border-radius: 15px;
   background-color: var(--navbar-hover-color);
-  /* mix-blend-mode: difference; */
 }
 nav a,
 a:hover,
@@ -26,14 +34,36 @@ header hr {
   border: 8px solid;
   border-radius: 2px;
 }
-.modeAndWheelBtn img{
+#burgerIcon{
+  display:none;
+}
+.navbarBtn img{
   height: 50px;
 }
-.modeAndWheelBtn:hover {
+.navbarBtn:hover {
   cursor: pointer;
 }
 
-/* Header animations */
-/* @keyframes navbarHover {
-  from
-} */
+/* Tablet */
+@media only screen and (min-width: 720px) and (max-width:1024px){
+  nav ul {
+    font-size: 25px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 720px){
+  nav ul {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top:0;
+    background-color: var(--navbar-hover-color);
+    opacity: 0.95;
+    font-size: 35px;
+    border-radius: 20px;
+  }
+  #burgerIcon{
+    display:inline;
+  }
+}

@@ -1,12 +1,14 @@
 /* === UPCOMING GAME SECTION === */
+/* Desktop */
 #upGamesFlexWrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
 
 .upGamesTile {
-  position: relative;
+  position: relative;  
 }
 
 .upGamesTile img {
@@ -32,4 +34,32 @@
   z-index: 1;
   pointer-events: none;
   text-align: center;
+}
+
+/* Tablet */
+@media only screen and (min-width: 720px) and (max-width:1024px){
+  .upGamesTile img{
+    z-index: auto;
+    height: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 720px){
+  .upGamesTile img{
+    z-index: auto;
+    height: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .upGamesHoverText {
+    font-size: 24px;
+    text-shadow: 2px 2px 10px black;
+  }
 }

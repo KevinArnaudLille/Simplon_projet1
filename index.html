@@ -1,129 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./styles/navbar.css" />
-    <link rel="stylesheet" href="./styles/bestGamesSectionA.css" />
-    <link rel="stylesheet" href="./styles/upGamesSectionB.css" />
-    <link rel="stylesheet" href="./styles/contactSectionC.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./styles/navbar.css" />
+  <link rel="stylesheet" href="./styles/bestGamesSectionA.css" />
+  <link rel="stylesheet" href="./styles/upGamesSectionB.css" />
+  <link rel="stylesheet" href="./styles/contactSectionC.css" />
+  <link rel="stylesheet" href="./styles/footer.css" />
 
-    <title>Best 5 Videogame puzzles to challenge your logic</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet" />
 
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <div class="modeAndWheelBtn">
-            <img src="./icons/colorwheel.png" alt="" />
+  <title>Best 5 Videogame puzzles to challenge your logic</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navbarBtn">
+        <img src="./icons/colorwheel.png" alt="color wheel icon" />
+      </div>
+      <div class="navbarBtn" id="burgerIcon">
+        <img src="./icons/burger-black.svg" alt="burger menu icon" />
+      </div>
+      <ul>
+        <li>
+          <a href="#bestGamesSection">
+            <strong>
+              Best puzzle games
+            </strong>
+          </a>
+        </li>
+        <li>
+          <a href="#upGamesSection"> Upcoming games </a>
+        </li>
+        <li>
+          <a href="#contactSection"> Contact </a>
+        </li>
+      </ul>
+      <div class="navbarBtn" id="lightBubble">
+        <img src="./icons/lightbubble-black.svg" alt="light bubble icon" />
+      </div>
+    </nav>
+    <hr />
+  </header>
+  <main>
+    <section id="bestGamesSection">
+      <!-- Content generated through js for html clarity -->
+      <!-- tags are h1+((article>h2+img+p+div(.seeReview))*article nb) -->
+    </section>
+    <section id="upGamesSection">
+      <h1>Upcoming puzzle games in 2022</h1>
+      <div id="upGamesFlexWrap">
+        <div class="upGamesTile">
+          <div class="upGamesHoverText">
+            Uno based puzzle videogame
+            <br />
+            -
+            <br />
+            Coming Spring 2022
           </div>
-          <li>
-            <a href="#bestGamesSection"> \o/ Best puzzle games \o/ </a>
-          </li>
-          <li>
-            <a href="#upGamesSection"> Upcoming games </a>
-          </li>
-          <li>
-            <a href="#contactSection"> Contact </a>
-          </li>
-          <div class="modeAndWheelBtn" id="lightBubble">
-            <img src="./icons/lightbubble-black.svg" alt="" />
-          </div>
-        </ul>
-      </nav>
-      <hr />
-    </header>
-    <main>
-      <section id="bestGamesSection">
-        <!-- Content generated through js for html clarity -->
-        <!-- tags are h1+((article>h2+img+p+div(.seeReview))*article nb) -->
-      </section>
-      <section id="upGamesSection">
-        <h1>Upcoming puzzle games in 2022</h1>
-        <div id="upGamesFlexWrap">
-          <div class="upGamesTile">
-            <div class="upGamesHoverText">
-              Uno based puzzle videogame
-              <br />
-              -
-              <br />
-              Coming Spring 2022
-            </div>
-            <img src="./img/Uno.jpg" alt="upcoming Uno videogame" />
-          </div>
-          <div class="upGamesTile">
-            <div class="upGamesHoverText">
-              Scrabble based puzzle videogame
-              <br />
-              -
-              <br />
-              Coming Summer 2022
-            </div>
-            <img src="./img/Scrabble.jpg" alt="upcoming Uno videogame" />
-          </div>
-          <div class="upGamesTile">
-            <div class="upGamesHoverText">
-              Rami based puzzle videogame
-              <br />
-              -
-              <br />
-              Coming Falls 2022
-            </div>
-            <img src="./img/Rami.png" alt="upcoming Uno videogame" />
-          </div>
+          <img src="./img/Uno.jpg" alt="upcoming Uno videogame" />
         </div>
-      </section>
-      <section id="contactSection">
-        <h1>Contact me!</h1>
-        <form id="contactFormular">
-          <label for="name">Your name:</label>
-          <br />
-          <input name="name" type="text" placeholder="Bobby Kotick" required />
-          <br />
-          <label for="email">Your email:</label>
-          <br />
-          <input
-            name="email"
-            type="text"
-            placeholder="BBKotick@666.com"
-            required
-          />
-          <br />
-          <label for="job">Your job:</label>
-          <br />
-          <select name="job">
-            <option value="Journalist">Journalist</option>
-            <option value="Puzzle enthusiast" selected>
-              Puzzle enthusiast
-            </option>
-            <option value="Game designer">Game designer</option>
-            <option value="QA">QA</option>
-          </select>
-          <br />
-          <label for="message">Your request:</label>
-          <br />
-          <textarea name="message">Hello Kek! (always a good start)</textarea>
-          <br />
-          <button type="submit" name="submit">Send your request!</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <hr />
-      Kevin Arnaud &#169; 2022
-    </footer>
-  </body>
-  <script src="fakeData.js"></script>
-  <script src="script.js"></script>
+        <div class="upGamesTile">
+          <div class="upGamesHoverText">
+            Scrabble based puzzle videogame
+            <br />
+            -
+            <br />
+            Coming Summer 2022
+          </div>
+          <img src="./img/Scrabble.jpg" alt="upcoming Uno videogame" />
+        </div>
+        <div class="upGamesTile">
+          <div class="upGamesHoverText">
+            Rami based puzzle videogame
+            <br />
+            -
+            <br />
+            Coming Falls 2022
+          </div>
+          <img src="./img/Rami.jpg" alt="upcoming Uno videogame" />
+        </div>
+      </div>
+    </section>
+    <section id="contactSection">
+      <h1>Contact me!</h1>
+      <form id="contactFormular">
+        <label for="name">Your name:</label>
+        <br />
+        <input name="name" type="text" placeholder="Bobby Kotick" required />
+        <br />
+        <label for="email">Your email:</label>
+        <br />
+        <input name="email" type="text" placeholder="BBKotick@666.com" required />
+        <br />
+        <label for="job">Your job:</label>
+        <br />
+        <select name="job">
+          <option value="Journalist">Journalist</option>
+          <option value="Puzzle enthusiast" selected>
+            Puzzle enthusiast
+          </option>
+          <option value="Game designer">Game designer</option>
+          <option value="QA">QA</option>
+        </select>
+        <br />
+        <label for="message">Your request:</label>
+        <br />
+        <textarea name="message">Hello Kek! (always a good start)</textarea>
+        <br />
+        <button type="submit" name="submit">Send your request!</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <hr />
+    Kevin Arnaud &#169; 2022
+  </footer>
+</body>
+<script src="fakeData.js"></script>
+<script src="script.js"></script>
+
 </html>

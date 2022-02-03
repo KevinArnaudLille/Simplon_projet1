@@ -1,10 +1,17 @@
 /* === BEST GAME SECTION === */
+/* Desktop */
+#bestGamesSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #bestGamesSection article {
   background-color: var(--article-background-color);
   overflow: auto;
   margin: 10px;
   border-radius: 5px;
   padding: 10px;
+  max-width: 1600px;
 }
 
 #bestGamesSection article h2 {
@@ -14,12 +21,36 @@
 }
 
 #bestGamesSection article img {
-  height: 280px;
-  max-width: 30vw;
+  width:30%;
   float: left;
   margin: 0px 10px;
 }
 
 .seeReview {
   font-size: 19px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 720px) and (max-width:1024px){
+  #bestGamesSection article h2 {
+    font-size: 30px;
+  }
+  #bestGamesSection article img {
+    width:90%;
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 720px){
+  #bestGamesSection article img {
+    width:90%;
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }

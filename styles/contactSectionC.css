@@ -1,4 +1,5 @@
 /* === CONTACT SECTION === */
+/* Desktop */
 #contactFormular {
   text-align: center;
   font-size: 30px;
@@ -13,14 +14,20 @@
   font-family: "Supermercado One", cursive;
   font-size: 32px;
   color:var(--text-color);
-  background-color: rgb(255, 249, 244);
+  background-color: var(--main-background-color);
+  color: var(--text-color);
 }
 
 #contactFormular button:hover {
-  background-color: bisque;
+  background-color: var(--navbar-hover-color);
 }
 
-/* === FOOTER === */
-footer {
-  text-align: center;
+/* Tablet */
+@media only screen and (min-width: 720px) and (max-width:1024px){
+
+}
+
+/* Mobile */
+@media only screen and (max-width: 720px){
+
 }
