@@ -1,0 +1,39 @@
+/* === HEADER === */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 40px;
+  justify-content: space-around;
+  margin: 5px;
+  padding: 0;
+}
+nav ul li {
+  padding: 5px;
+}
+nav ul li:hover {
+  border-radius: 15px;
+  background-color: var(--navbar-hover-color);
+  /* mix-blend-mode: difference; */
+}
+nav a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+header hr {
+  border: 8px solid;
+  border-radius: 2px;
+}
+.modeAndWheelBtn img{
+  height: 50px;
+}
+.modeAndWheelBtn:hover {
+  cursor: pointer;
+}
+
+/* Header animations */
+/* @keyframes navbarHover {
+  from
+} */

@@ -1,0 +1,25 @@
+/* === BEST GAME SECTION === */
+#bestGamesSection article {
+  background-color: var(--article-background-color);
+  overflow: auto;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#bestGamesSection article h2 {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+#bestGamesSection article img {
+  height: 280px;
+  max-width: 30vw;
+  float: left;
+  margin: 0px 10px;
+}
+
+.seeReview {
+  font-size: 19px;
+}

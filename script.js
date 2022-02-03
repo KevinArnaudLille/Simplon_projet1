@@ -3,7 +3,7 @@ function $(selector) {
   return document.querySelector(selector);
 }
 
-// -- Generate articles content from fakedata
+// -- Generate articles html content from fakedata.js
 const generateReview = review => {
   return `
   <br/>

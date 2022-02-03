@@ -1,0 +1,26 @@
+/* === CONTACT SECTION === */
+#contactFormular {
+  text-align: center;
+  font-size: 30px;
+}
+
+#contactFormular textarea {
+  width: 50%;
+  height: 200px;
+}
+
+#contactFormular button {
+  font-family: "Supermercado One", cursive;
+  font-size: 32px;
+  color:var(--text-color);
+  background-color: rgb(255, 249, 244);
+}
+
+#contactFormular button:hover {
+  background-color: bisque;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+}
