@@ -70,7 +70,6 @@ const openBurgerMenu = () => {
 }
 const closeBurgerMenu = () => {
   if (isBurgerMenuOpen) {
-    console.log("is ok");
     menuOpen.style.display = "none";
     isBurgerMenuOpen = !isBurgerMenuOpen;
   }
@@ -81,3 +80,10 @@ let burgerBtn = $("#burgerIcon");
 let menuOpen = $("nav ul");
 burgerBtn.addEventListener("click", () => openBurgerMenu(menuOpen));
 menuOpen.addEventListener("click", closeBurgerMenu);
+
+// -- Change bar color with color wheel
+let colorPicker = $("#colorPicker");
+const colorUpdate = e => {
+  console.log(e.target.value);
+};
+colorPicker.addEventListener("change", e => colorUpdate(e));

@@ -7,6 +7,19 @@ nav {
   padding: 0;
   align-items: center;
 }
+#colorWheelContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#colorWheelContainer input {
+  border-radius: 100%;
+}
+#colorWheelContainer p {
+  margin: 0;
+  margin-bottom: 2px;
+}
 nav ul {
   list-style-type: none;
   display: flex;
@@ -65,5 +78,8 @@ header hr {
   }
   #burgerIcon{
     display:inline;
+  }
+  #colorWheelContainer p {
+    display: none;
   }
 }
