@@ -103,5 +103,15 @@ const COLOR_MODES = [
         variableName: "--navbar-hover-color",
         lightColor: "#BAD4DE",
         darkColor: "#082E3F"
+    },
+    {
+        variableName: "--background-image",
+        lightColor: "url(./icons/maze-black.svg)",
+        darkColor: "url(./icons/maze-white.svg)"
+    },
+    {
+        variableName: "--hr-color",
+        lightColor: "black",
+        darkColor: "white"
     }
 ]

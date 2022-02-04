@@ -4,6 +4,8 @@
   --main-background-color: white;
   --article-background-color: #bad4de;
   --navbar-hover-color: #bad4de;
+  --background-image: url(./icons/maze-black.svg);
+  --hr-color: black;
 }
 
 /* reset */
@@ -13,7 +15,10 @@ body {
   font-family: "Supermercado One", cursive;
   background-color: var(--main-background-color);
   color: var(--text-color);
+  background-image: var(--background-image);
 }
+
+
 
 /* === SECTION TITLES === */
 h1 {

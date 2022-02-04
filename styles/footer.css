@@ -1,7 +1,9 @@
 /* === FOOTER === */
 /* Desktop */
 footer {
+  padding-bottom: 8px;
   text-align: center;
+  background-color: var(--main-background-color);
 }
 
 /* Tablet */

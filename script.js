@@ -78,12 +78,12 @@ const closeBurgerMenu = () => {
 // - DOM elements events
 let burgerBtn = $("#burgerIcon");
 let menuOpen = $("nav ul");
-burgerBtn.addEventListener("click", () => openBurgerMenu(menuOpen));
+burgerBtn.addEventListener("click", openBurgerMenu);
 menuOpen.addEventListener("click", closeBurgerMenu);
 
 // -- Change bar color with color wheel
 let colorPicker = $("#colorPicker");
-const colorUpdate = e => {
-  console.log(e.target.value);
+const addHrColor = e => {
+  document.documentElement.style.setProperty("--hr-color", e.target.value);
 };
-colorPicker.addEventListener("change", e => colorUpdate(e));
+colorPicker.addEventListener("change", e => addHrColor(e));
