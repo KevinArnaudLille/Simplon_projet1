@@ -1,10 +1,20 @@
-// ====== Global functions ======
+// ====== GLOBAL FUNCTION ======
 function $(selector) {
   return document.querySelector(selector);
 }
 
 
+// ========================================================================
 // -- Generate articles html content from fakedata.js
+const generateImg = imgList => {
+  if(imgList.length === 1){
+    return `<li><img src="${imgList[0].imgSrc}" alt="${imgList[0].imgAlt}"></li>`
+  } else {
+    return imgList.map(
+      img => `<li><img src="${img.imgSrc}" alt="${img.imgAlt}"></li>`
+    ).join('')
+  }
+}
 const generateReview = review => {
   return `
   <br/>
@@ -15,7 +25,9 @@ const generateArticle = article => {
   return `
   <article>
   <h2>${article.ranking} - ${article.title}</h2>
-  <img src="${article.imgSrc}" alt="${article.imgAlt}">
+  <ul class="imgSlider">
+  ${generateImg(article.images)}
+  </ul>
   <p>${article.content}<p/>
   <div class="seeReview">
   See more on reviews:
@@ -32,7 +44,8 @@ ${FAKE_ARTICLES_DATA.map(generateArticle).join('')}
 $("#bestGamesSection").innerHTML = articlesSectionInnerHTML;
 
 
-// -- Update color CSS color variables while switching theme (light/dark)
+// ========================================================================
+// -- Update color CSS color variables while switching theme (light/dark) 
 // - update functions
 let rootStyle = document.documentElement.style;
 let ligthBubble = $("#lightBubble img");
@@ -56,13 +69,14 @@ const switchMode = () => {
   isOnDarkMode = !isOnDarkMode;
 };
 
-// - DOM elements events
+// - add events
 let darkBtn = $("#lightBubble");
 darkBtn.addEventListener("click", switchMode);
 
 
-// -- Burger menu while on mobile
-// - Opening/closing burger menu fonction
+// ========================================================================
+// -- Burger menu while on mobile 
+// - opening/closing burger menu fonction
 let isBurgerMenuOpen = false;
 const openBurgerMenu = () => {
   menuOpen.style.display = "flex";
@@ -75,13 +89,15 @@ const closeBurgerMenu = () => {
   }
 }
 
-// - DOM elements events
+// - add events
 let burgerBtn = $("#burgerIcon");
 let menuOpen = $("nav ul");
 burgerBtn.addEventListener("click", openBurgerMenu);
 menuOpen.addEventListener("click", closeBurgerMenu);
 
-// -- Change bar color with color wheel
+
+// ========================================================================
+// -- Change bar color with color wheel 
 let colorPicker = $("#colorPicker");
 const addHrColor = e => {
   document.documentElement.style.setProperty("--hr-color", e.target.value);

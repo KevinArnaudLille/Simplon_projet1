@@ -5,26 +5,30 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet" />
+  
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./styles/titles.css" />
   <link rel="stylesheet" href="./styles/navbar.css" />
   <link rel="stylesheet" href="./styles/bestGamesSectionA.css" />
   <link rel="stylesheet" href="./styles/upGamesSectionB.css" />
   <link rel="stylesheet" href="./styles/contactSectionC.css" />
   <link rel="stylesheet" href="./styles/footer.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet" />
-
   <title>Best 5 Videogame puzzles to challenge your logic</title>
 </head>
 
 <body>
+
+  <!-- ===== HEADER =====  -->
   <header>
     <nav>
       <div class="navbarBtn">
         <div id="colorWheelContainer">
-          <p>Try to change color!</p>
+          <p>Try to pick a color!</p>
           <input type="color" id="colorPicker">
         </div>
       </div>
@@ -53,10 +57,16 @@
     <hr />
   </header>
   <main>
+
+
+    <!-- ===== BEST GAMES SECTION A =====  -->
     <section id="bestGamesSection">
       <!-- Content generated through js for html clarity -->
-      <!-- tags are h1+((article>h2+img+p+div(.seeReview))*article nb) -->
+      <!-- tags are h1+((article>h2+img+p+div.seeReview)*ARTICLE_NB) -->
     </section>
+
+
+    <!-- ===== UPCOMING GAMES SECTION B =====  -->
     <section id="upGamesSection">
       <h1>Upcoming puzzle games in 2022</h1>
       <div id="upGamesFlexWrap">
@@ -92,20 +102,23 @@
         </div>
       </div>
     </section>
+
+
+    <!-- ===== CONTACT SECTION C =====  -->
     <section id="contactSection">
       <h1>Contact me!</h1>
       <form id="contactFormular">
         <label for="name">Your name:</label>
         <br />
-        <input name="name" type="text" placeholder="Bobby Kotick" required />
+        <input id="name" name="name" type="text" placeholder="Bobby Kotick" required />
         <br />
         <label for="email">Your email:</label>
         <br />
-        <input name="email" type="text" placeholder="BBKotick@666.com" required />
+        <input id="email" name="email" type="text" placeholder="BBKotick@666.com" required />
         <br />
         <label for="job">Your job:</label>
         <br />
-        <select name="job">
+        <select id="job" name="job">
           <option value="Journalist">Journalist</option>
           <option value="Puzzle enthusiast" selected>
             Puzzle enthusiast
@@ -116,18 +129,24 @@
         <br />
         <label for="message">Your request:</label>
         <br />
-        <textarea name="message">Hello Kek! (always a good start)</textarea>
+        <textarea id="message" name="message">Hello Kek! (always a good start)</textarea>
         <br />
-        <button type="submit" name="submit">Send your request!</button>
+        <button type="submit" id="submit">Send your request!</button>
       </form>
     </section>
   </main>
+
+
+  <!-- ===== FOOTER =====  -->
   <footer>
     <hr />
     Kevin Arnaud &#169; 2022
   </footer>
+  
+
+  <!-- ===== JS SCRIPTS =====  -->
+  <script src="fakeData.js"></script>
+  <script src="script.js"></script>
 </body>
-<script src="fakeData.js"></script>
-<script src="script.js"></script>
 
 </html>
