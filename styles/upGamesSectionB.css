@@ -2,22 +2,22 @@
 /* Desktop */
 #upGamesSection{
   background-color: var(--main-background-color);
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   box-shadow: inset 0px 0px 10px var(--hr-color);
 }
 
-#upGamesFlexWrap {
+#upGamesSection #upGamesFlexWrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
 
-.upGamesTile {
+#upGamesSection #upGamesFlexWrap .upGamesTile {
   position: relative;  
 }
 
-.upGamesTile img {
+#upGamesSection #upGamesFlexWrap .upGamesTile img {
   position: relative;
   margin: 5px;
   height: 300px;
@@ -25,18 +25,19 @@
   border-radius: 20px;
 }
 
-.upGamesTile img:hover {
+#upGamesSection #upGamesFlexWrap .upGamesTile img:hover {
   z-index: auto;
+  filter: grayscale(70%);
 }
 
-.upGamesHoverText {
+#upGamesSection #upGamesFlexWrap .upGamesHoverText {
   color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 34px;
-  text-shadow: 2px 2px 10px black;
+  text-shadow: 0px 0px 10px black;
   z-index: 1;
   pointer-events: none;
   text-align: center;
@@ -44,27 +45,29 @@
 
 /* Tablet */
 @media only screen and (min-width: 720px) and (max-width:1024px){
-  .upGamesTile img{
+  #upGamesSection #upGamesFlexWrap .upGamesTile img{
     z-index: auto;
     height: auto;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    filter: grayscale(50%);
   }
 }
 
 /* Mobile */
 @media only screen and (max-width: 720px){
-  .upGamesTile img{
+  #upGamesSection #upGamesFlexWrap .upGamesTile img{
     z-index: auto;
     height: auto;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    filter: grayscale(50%);
   }
-  .upGamesHoverText {
+  #upGamesSection #upGamesFlexWrap .upGamesHoverText {
     font-size: 24px;
     text-shadow: 0px 0px 10px black;
   }

@@ -24,10 +24,14 @@
 
 /* Tablet */
 @media only screen and (min-width: 720px) and (max-width:1024px){
-
+  #contactFormular textarea {
+    width: 60%;
+  }
 }
 
 /* Mobile */
 @media only screen and (max-width: 720px){
-
+  #contactFormular textarea {
+    width: 80%;
+  }
 }

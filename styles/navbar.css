@@ -1,28 +1,29 @@
 /* === HEADER === */
 /* Desktop */
-header{
+header {
   background-color: var(--main-background-color);
 }
-nav {
+header nav {
   display: flex;
   justify-content: space-around;
   padding: 5px;
   align-items: center;
 }
-#colorWheelContainer{
+header nav #colorWheelContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#colorWheelContainer input {
+header nav #colorWheelContainer input {
   border-radius: 100%;
+  cursor: pointer;
 }
-#colorWheelContainer p {
+header nav #colorWheelContainer p {
   margin: 0;
   margin-bottom: 5px;
 }
-nav ul {
+header nav ul {
   list-style-type: none;
   display: flex;
   font-size: 40px;
@@ -31,71 +32,85 @@ nav ul {
   padding: 0;
   align-items: center;
 }
-nav ul li {
+header nav ul li {
   padding: 5px 30px;
 }
-nav ul li:hover {
+header nav ul li:hover {
   border-radius: 15px;
   background-color: var(--navbar-hover-color);
 }
-nav a,
+header nav a,
 a:hover,
 a:focus,
 a:active {
   text-decoration: none;
   color: inherit;
 }
+header nav #burgerIcon {
+  display: none;
+}
+header nav .navbarBtn img {
+  height: 50px;
+}
+header nav .navbarBtn:hover {
+  cursor: pointer;
+}
 header hr {
   border: 6px solid var(--hr-color);
 }
-#burgerIcon{
-  display:none;
-}
-.navbarBtn img{
-  height: 50px;
-}
-.navbarBtn:hover {
-  cursor: pointer;
-}
 
 @keyframes rotateBubble {
-  0%{transform: rotate(0deg)}
-  10%{transform: rotate(-13deg)}
-  20%{transform: rotate(15deg)}
-  40%{transform: rotate(-5deg)}
-  60%{transform: rotate(4deg)}
-  80%{transform: rotate(-1deg)}
-  100%{transform: rotate(0deg)}
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-13deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-#lightBubble img:hover{
+header nav #lightBubble img:hover {
   animation: 0.6s rotateBubble;
 }
 
 /* Tablet */
-@media only screen and (min-width: 720px) and (max-width:1024px){
-  nav ul {
+@media only screen and (min-width: 720px) and (max-width: 1024px) {
+  header nav ul {
     font-size: 25px;
   }
 }
 
 /* Mobile */
-@media only screen and (max-width: 720px){
-  nav ul {
+@media only screen and (max-width: 720px) {
+  header nav ul {
     display: none;
     position: absolute;
     flex-direction: column;
-    top:0;
+    top: 0;
     background-color: var(--navbar-hover-color);
-    opacity: 0.90;
+    opacity: 0.9;
     font-size: 35px;
     border-radius: 20px;
   }
-  #burgerIcon{
-    display:flex;
+  header nav #burgerIcon {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
-  #colorWheelContainer p {
+  header nav #colorWheelContainer p {
     display: none;
   }
 }

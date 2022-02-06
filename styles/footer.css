@@ -5,13 +5,3 @@ footer {
   text-align: center;
   background-color: var(--main-background-color);
 }
-
-/* Tablet */
-@media only screen and (min-width: 720px) and (max-width:1024px){
-
-}
-
-/* Mobile */
-@media only screen and (max-width: 720px){
-
-}

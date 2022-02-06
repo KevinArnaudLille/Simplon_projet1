@@ -34,15 +34,15 @@
   scroll-snap-type: x mandatory;
 }
 
-.imgSlider::-webkit-scrollbar {
+#bestGamesSection article .imgSlider::-webkit-scrollbar {
   height: 10px;
 }
-.imgSlider::-webkit-scrollbar-track{
+#bestGamesSection article .imgSlider::-webkit-scrollbar-track{
   border: solid 1px var(--text-color);
   background: var(--main-background-color);
   /* background: green; */
 }
-.imgSlider::-webkit-scrollbar-thumb{
+#bestGamesSection article .imgSlider::-webkit-scrollbar-thumb{
   border: dashed 1px var(--text-color);
   background: var(--navbar-hover-color);
   /* background: green; */
@@ -75,7 +75,7 @@
     font-size: 30px;
   }
   #bestGamesSection article .imgSlider {
-    width: 90%;
+    width: 80%;
     float: none;
     margin-left: auto;
     margin-right: auto;
@@ -85,7 +85,7 @@
 /* Mobile */
 @media only screen and (max-width: 720px) {
   #bestGamesSection article .imgSlider {
-    width: 90%;
+    width: 100%;
     float: none;
     margin-left: auto;
     margin-right: auto;
