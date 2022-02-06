@@ -159,8 +159,8 @@ const COLOR_MODES = [
   },
   {
     variableName: "--background-image",
-    lightColor: "url(./icons/maze-black.svg)",
-    darkColor: "url(./icons/maze-white.svg)",
+    lightColor: "url(../icons/maze-black.svg)",
+    darkColor: "url(../icons/maze-white.svg)",
   },
   {
     variableName: "--hr-color",
