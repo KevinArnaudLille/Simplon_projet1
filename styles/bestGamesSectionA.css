@@ -40,12 +40,10 @@
 #bestGamesSection article .imgSlider::-webkit-scrollbar-track{
   border: solid 1px var(--text-color);
   background: var(--main-background-color);
-  /* background: green; */
 }
 #bestGamesSection article .imgSlider::-webkit-scrollbar-thumb{
   border: dashed 1px var(--text-color);
   background: var(--navbar-hover-color);
-  /* background: green; */
 }
 
 #bestGamesSection article .imgSlider li {

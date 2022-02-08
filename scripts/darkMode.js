@@ -1,7 +1,6 @@
 // ========================================================================
 // -- Update color CSS color variables while switching theme (light/dark) 
 // - Dom elements and state variables assignement
-let rootStyle = document.documentElement.style;
 let ligthBubble = $("#lightBubble img");
 let burgerIcon = $("#burgerIcon img");
 let isOnDarkMode = false;
